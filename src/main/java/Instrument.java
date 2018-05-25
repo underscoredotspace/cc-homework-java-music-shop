@@ -1,13 +1,9 @@
-package items.instruments;
-
-import items.Item;
-
 public abstract class Instrument extends Item implements IPlay {
     private final InstrumentType type;
     private final String colour;
     private final String sound;
 
-    public Instrument(String name, int purchaseCost, int sellingPrice, InstrumentType type, String colour, String sound) {
+    Instrument(String name, int purchaseCost, int sellingPrice, InstrumentType type, String colour, String sound) {
         super(name, purchaseCost, sellingPrice);
         this.type = type;
         this.colour = colour;

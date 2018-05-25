@@ -1,7 +1,5 @@
-package items;
-
 public class Item implements ISell {
-    public final String name;
+    final String name;
     int sellingPrice;
     final int purchaseCost;
 
