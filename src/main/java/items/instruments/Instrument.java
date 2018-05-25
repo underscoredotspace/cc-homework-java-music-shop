@@ -2,7 +2,7 @@ package items.instruments;
 
 import items.Item;
 
-public abstract class Instrument extends Item {
+public abstract class Instrument extends Item implements IPlay {
     private final InstrumentType type;
     private final String colour;
     private final String sound;
@@ -20,5 +20,9 @@ public abstract class Instrument extends Item {
 
     public String getColour() {
         return this.colour;
+    }
+
+    public String play() {
+        return String.format("The %s plays and the crowd enjoy it's %s.", this.name, this.sound);
     }
 }

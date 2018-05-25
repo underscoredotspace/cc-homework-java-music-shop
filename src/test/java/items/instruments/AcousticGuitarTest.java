@@ -27,4 +27,9 @@ public class AcousticGuitarTest {
     public void canGetInstrumentType() {
         assertEquals(InstrumentType.STRING, yamahaF310.getType());
     }
+
+    @Test
+    public void canPlayInstrument() {
+        assertEquals("The Yamaha F310 plays and the crowd enjoy it's strum.", yamahaF310.play());
+    }
 }

@@ -1,7 +1,7 @@
 package items;
 
 public class Item implements ISell {
-    private String name;
+    public final String name;
     int sellingPrice;
     final int purchaseCost;
 
