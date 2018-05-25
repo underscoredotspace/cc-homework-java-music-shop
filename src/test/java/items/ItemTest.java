@@ -14,28 +14,28 @@ public class ItemTest {
     }
 
     @Test
-    public void getName() {
+    public void canGetName() {
         assertEquals("Drum Sticks", drumSticks.getName());
     }
 
     @Test
-    public void getSellingPrice() {
+    public void canGetSellingPrice() {
         assertEquals(20, drumSticks.getSellingPrice());
     }
 
     @Test
-    public void setSellingPrice() {
+    public void canSetSellingPrice() {
         drumSticks.setSellingPrice(30);
         assertEquals(30, drumSticks.getSellingPrice());
     }
 
     @Test
-    public void getPurchaseCost() {
+    public void canGetPurchaseCost() {
         assertEquals(15, drumSticks.getPurchaseCost());
     }
 
     @Test
-    public void calculateMarkup() {
+    public void canGetMarkup() {
         assertEquals(5, drumSticks.calculateMarkup());
     }
 }
